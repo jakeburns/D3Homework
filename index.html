@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <script type="text/javascript" src = "https://d3js.org/d3.v5.js">
+
+    var animals= ["penguin", "mouse", "cat", "dog"];
+
+    d3.select("body").append("ul");
+
+    var unorderedList = d3.select("ul");
+
+    animals.forEach(function(e){unorderedList.append("li").text(e)});
+
+    </script>
     <meta charset="utf-8">
     <title>javascript</title>
   </head>
   <body>
-    <script type="text/javascript" src = "https://d3js.org/d3.v5.js">
 
-    var animals= ["penguin", "mouse", "cat", "dog"]
-
-    d3.select("body").append("ul")
-
-    var unorderedList = d3.select("ul");
-
-    animals.forEach(function(e){unorderedList.append("li").text(e)})
-
-    </script>
   </body>
 </html>
